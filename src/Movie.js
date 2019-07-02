@@ -21,16 +21,6 @@ import './Movie.css';
 //     }
 // }
 
-function Movie({title, poster}) {
-    return(
-        <div>
-            <MoviePoster poster={poster}/>
-            <h1>{title}</h1>
-        </div>
-
-    )
-}
-
 // class MoviePoster extends Component {
 //     static propTypes = {
 //         poster: PropTypes.string.isRequired
@@ -42,6 +32,16 @@ function Movie({title, poster}) {
 //         )
 //     }
 // }
+
+function Movie({title, poster}) {
+    return(
+        <div>
+            <MoviePoster poster={poster}/>
+            <h1>{title}</h1>
+        </div>
+
+    )
+}
 
 Movie.propTypes = {
     title: PropTypes.string.isRequired,
